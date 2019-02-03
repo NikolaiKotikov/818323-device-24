@@ -12,8 +12,8 @@
   			</a>
   			<p class="site-search">Поиск по сайту</p>
   			<ul class="user-navigation">
-  				<li class="logout-link">Выйти</li>
-  				<li class="user-name">Валентин Петухов</li>
+  				<li class="logout-link"><button>Выйти</button></li>
+  				<li class="user-name"><a href="#">Валентин Петухов</a></li>
   				<li><a href="#">Сравнить</a></li>
   				<li><a href="#">Корзина</a></li>
   			</ul>
@@ -34,29 +34,82 @@
   		</ul>
   		<section class="filters">
   			<h2 class="visually-hidden">Фильтр товаров</h2>
-  			<!--форма с фильтрами-->
+  			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+  				<fieldset>
+  					<legend>Стоимость</legend>
+  					<label class="visually-hidden" for="filter-cost">Выберите стоимость</label>
+  					<input name="cost" type="range" min="0" max="5000" id="filter-cost">
+  				</fieldset>
+  				<fieldset>
+  					<legend>Цвет</legend>
+  					<ul>
+  						<li>
+  							<label for="filter-black">Черный</label>
+  							<input type="checkbox" name="black" id="filter-black" checked>
+  						</li>
+  						<li>
+  							<label for="filter-white">Белый</label>
+  							<input type="checkbox" name="white" id="filter-white">
+  						</li>
+  						<li>
+  							<label for="filter-blue">Синий</label>
+  							<input type="checkbox" name="blue" id="filter-blue" checked>
+  						</li>
+  						<li>
+  							<label for="filter-red">Красный</label>
+  							<input type="checkbox" name="red" id="filter-red" checked>
+  						</li>
+  						<li>
+  							<label for="filter-pink">Розовый</label>
+  							<input type="checkbox" name="pink" id="filter-pink">
+  						</li>
+  					</ul>
+  				</fieldset>
+  				<fieldset>
+  					<legend>Bluetooth</legend>
+  						<ul>
+  							<li>
+  								<input type="radio" name="availability" value="available" id="filter-available" checked>
+  								<label for="filter-available">Есть</label>
+  							</li>
+  							<li>
+  								<input type="radio" name="availability" value="not-available" id="filter-not-available">
+  								<label for="filter-not-available">Нет</label>
+  							</li>
+  						</ul>
+  				</fieldset>
+  				<button type="submit">Показать</button>
+  			</form>
   		</section>
   		<section class="catalog">
   			<h2 class="visually-hidden">Каталог товаров</h2>
   			<ul class="products">
   				<li class="products-item">
-  					<h3><a href="#">Любительская селфи-палка</a></h3>
-  					<a href="#"><img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a>
+  					<a href="#">
+  						<h3>Любительская селфи-палка</h3>
+  						<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+  					</a>
   					<p>500 руб.</p>
   				</li>
   				<li class="products-item">
-  					<h3><a href="#">Профессиональная селфи-палка</a></h3>
-   					<a href="#"><img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a>
+  					<a href="#">
+  						<h3>Профессиональная селфи-палка</h3>
+   						<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+   					</a>
   					<p>1500 руб.</p>
   				</li>
   				<li class="products-item">
-   					<h3><a href="#">Непотопляемая селфи-палка</a></h3>
-  					<a href="#"><img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+  					<a href="#">
+   						<h3>Непотопляемая селфи-палка</h3>
+  						<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+  					</a>
 					<p>2500 руб.</p>
   				</li>
   				<li class="products-item">
-   					<h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
-  					<a href="#"><img src="img/item-4.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a>
+  					<a href="#">
+   						<h3>Селфи-палка «Следуй за мной»</h3>
+  						<img src="img/item-4.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+  					</a>
 					<p>4900 руб.</p>
   				</li>
   			</ul>
@@ -65,8 +118,8 @@
   			<li class="pagination-item pagination-current"><a href="#">1</a></li>
   			<li class="pagination-item"><a href="#">2</a></li>
   			<li class="pagination-item"><a href="#">3</a></li>
-  			<li class="pagination-item"><a href="#">Назад</a></li>
-  			<li class="pagination-item"><a href="#">Вперёд</a></li>
+  			<li class="pagination-item"><button>Назад</button></li>
+  			<li class="pagination-item"><button>Вперёд</button></li>
   		</ul>
   	</main>
 	<footer class="main-footer">
@@ -82,8 +135,8 @@
 			<li><a href="#">Контакты</a></li>
 		</ul>
 		<ul class="user-footer-navigation">
-			<li class="logout-link">Выйти</li>
-			<li class="user-name">Валентин Петухов</li>
+			<li class="logout-link"><button>Выйти</button></li>
+			<li class="user-name"><a href="#">Валентин Петухов</a></li>
 			<li><a href="#">Сравнить</a></li>
 			<li><a href="#">Корзина</a></li>
 		</ul>
