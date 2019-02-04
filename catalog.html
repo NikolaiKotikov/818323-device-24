@@ -34,11 +34,19 @@
   		</ul>
   		<section class="filters">
   			<h2>Фильтр:</h2>
-  			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+  			<form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="minoutput.value=mincost.value; maxoutput.value=maxcost.value">
   				<fieldset>
   					<legend>Стоимость</legend>
-  					<label class="visually-hidden" for="filter-cost">Выберите стоимость</label>
-  					<input name="cost" type="range" min="0" max="5000" id="filter-cost">
+  						<p>
+  							<label for="cost-min">от</label>
+  							<input name="mincost" type="range" min="0" max="10000" value="0" id="cost-min">
+  							<output name="minoutput">0</output>
+  						</p>
+  						<p>
+  							<label for="cost-max">до</label>
+  							<input name="maxcost" type="range" min="1000" max="11000" value="5000" id="cost-max">
+  							<output name="maxoutput">5000</output>
+  						</p>
   				</fieldset>
   				<fieldset>
   					<legend>Цвет</legend>
@@ -69,11 +77,11 @@
   					<legend>Bluetooth</legend>
   						<ul>
   							<li>
-  								<input type="radio" name="availability" value="available" id="filter-available" checked>
+  								<input type="radio" name="bluetooth-availability" value="available" id="filter-available" checked>
   								<label for="filter-available">Есть</label>
   							</li>
   							<li>
-  								<input type="radio" name="availability" value="not-available" id="filter-not-available">
+  								<input type="radio" name="bluetooth-availability" value="not-available" id="filter-not-available">
   								<label for="filter-not-available">Нет</label>
   							</li>
   						</ul>
@@ -84,13 +92,13 @@
   		<section class="sort">
 				<h2>Сортировка:</h2>
 				<ul class="sort-type-list">
-					<li>По цене</li>
-					<li>По типу</li>
-					<li>По популярности</li>
+					<li><button>По цене</button></li>
+					<li><button>По типу</button></li>
+					<li><button>По популярности</button></li>
 				</ul>
 				<ul class="sort-range-list">
-					<li>По возрастанию</li>
-					<li>По убыванию</li>
+					<li><button>По возрастанию</button></li>
+					<li><button>По убыванию</button></li>
 				</ul>
 			</section>
   		<section class="catalog">
