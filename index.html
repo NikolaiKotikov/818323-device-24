@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+		<title>HTML Academy: Девайс</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -10,7 +13,11 @@
   			<a class=" main-header-logo">
   				<img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
   			</a>
-  			<p class="site-search">Поиск по сайту</p>
+				<form class="search" action="https://echo.htmlacademy.ru" method="get">
+					<label class="search-label" for="site-search">Поиск по сайту</label>
+					<input class="search-field" type="text" name="search" id="site-search">
+					<button class="search-button" type="submit"><span>Найти</span></button>
+				</form>
   			<ul class="user-navigation">
   				<li><a class="login-link" href="login.html">Войти</a></li>
   				<li><a href="#">Сравнить</a></li>
@@ -48,7 +55,7 @@
 									<td>Материал</td>
 								</tr>
 							</table>
-							<a href="#">Подробнее</a>
+							<a class="button" href="#"><span>Подробнее</span></a>
 						</section>
   				</li>
   				<li>
@@ -66,7 +73,7 @@
 									<td>Без подзарядки</td>
 								</tr>
 							</table>
-							<a href="#">Подробнее</a>
+							<a class="button" href="#"><span>Подробнее</span></a>
 						</section>	
   				</li>
   				<li>
@@ -79,21 +86,21 @@
 							<table class="advantages">
 								<tr>
 									<td>800 м</td>
-									<td>Дальность полета</td>
+									<td>50 м</td>
 								</tr>
 								<tr>
-									<td>50 м</td>
+									<td>Дальность полета</td>
 									<td>Радиус поражения</td>
 								</tr>
 							</table>
-							<a href="#">Подробнее</a>
+							 <a class="button" href="#"><span>Подробнее</span></a>
 						</section>
   				</li>
   			</ol>
   		</section>
   		<section class="popular">
   			<h2 class="visually-hidden">Популярные товары:</h2>
-  			<ul>
+  			<ul class="popular-items">
   				<li><a href="">Виртуальная реальность</a></li>
   				<li><a href="">Моноподы для селфи</a></li>
   				<li><a href="">Экшн-камеры</a></li>
@@ -105,9 +112,9 @@
   		<section class="services">
   			<h2 class="visually-hidden">Наши сервисы:</h2>
   			<ul class="servises-list">
-  				<li><button>Доставка</button></li>
-  				<li><button>Гарантия</button></li>
-  				<li><button>Кредит</button></li>
+  				<li><button class="button">Доставка</button></li>
+  				<li><button class="button">Гарантия</button></li>
+  				<li><button class="button">Кредит</button></li>
   			</ul>
   			<ul class="services-description">
   				<li>
@@ -155,7 +162,7 @@
   				<li><a href="#">Автотрейдинг</a></li>
   				<li><a href="#">ЖелДорЭкспедиция</a></li>
   			</ul>
-  			<a href="#">Подробнее о нас</a>
+  			<a class="button" href="#"><span>Подробнее о нас</span></a>
   		</section>
   		<section class="contacts">
   			<h2>Контакты</h2>
@@ -165,12 +172,12 @@
   			<p>
   				<a href="#"><img src="img/map.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. строителей, 15"></a>
   			</p>
-  			<a href="#">Напишите нам</a>
+  			<a class="button" href="#"><span>Напишите нам</span></a>
   		</section>
   	</main>
   	<footer class="main-footer">
   		<p class="footer-contacts">
-  			<a><img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device"></a>
+  			<a class="footer-logo"><img src="img/footer-logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device"></a>
   			<span>г. Москва, ул. строителей, 15</span>
   			<span>Тел.: +7 (495) 495-95-95</span>
   		</p>
@@ -181,7 +188,7 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<ul class="user-footer-navigation">
-				<li class="login-link">Войти</li>
+				<li class="login-link"><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li><a href="#">Корзина</a></li>
 			</ul>
@@ -210,16 +217,16 @@
   			<label for="contact-letter">Текст письма:</label>
   			<textarea id="contact-letter" name="letter"  cols="50" rows="10" placeholder="В свободной форме"></textarea>
   		</p>
-  		<button type="submit">Отправить</button>
+  		<button class="button" type="submit"><span>Отправить</span></button>
   	</form>
-  	<button><span class="visually-hidden">Закрыть</span></button>
+  	<button class="button-close"><span>Закрыть</span></button>
   </section>
   	<section class="modal-map">
   	<h2 class="visually-hidden">Как до нас добраться</h2>
   	<p>
   		<img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
   	</p>
-  	<button><span class="visually-hidden">Закрыть</span></button>
+  	<button class="button-close"><span>Закрыть</span></button>
   </section>
   </body>
 </html>

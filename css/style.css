@@ -1,0 +1,399 @@
+@font-face {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Gilroy"),
+		url("/fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Gilroy Extra Bold"),
+		local("Gilroy-ExtraBold"),
+		url("/fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
+
+	background-color: rgb(255, 255, 255);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.button {
+	position: relative;
+
+	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 2.15px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	text-transform: uppercase;
+
+	border: none;
+	background-color: inherit;
+}
+
+.button:before {
+	position: absolute;
+	top: 7px;
+
+	left: -44px;
+	content: "";
+	width: 220px;
+	height: 8px;
+	background-color: rgb(240, 197, 46);
+	z-index: -1;
+
+	content: "";
+}
+
+.button:hover::before {
+	height: 40px;
+	top: -10px;
+}
+
+.button:active span {
+	opacity: 0.3;
+}
+
+.button-close {
+	color: #ffffff;
+	background-color: #f0c52e;
+	opacity: 0.5;
+	border: none;
+}
+
+.button-close:hover {
+	opacity: 1;
+}
+
+.button-close:active {
+	opacity: 0.3;
+}
+
+header {
+	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.search,
+.user-navigation {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+}
+
+.main-navigation a {
+	font: inherit;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+.site-navigation a {
+	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+	letter-spacing: 3.6px;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.main-navigation ul {
+	list-style: none;
+}
+
+.search-label {
+	opacity: 0.3;
+}
+
+.search-field {
+	font: inherit;
+	color: #000000;
+
+	background-color: inherit;
+	border: none;
+}
+
+.search-label:hover {
+	opacity: 0.6;
+}
+
+.search-field:focus {
+	border-bottom: 2px solid #000000;
+}
+
+.search-button {
+	font: inherit;
+	color: #000000;
+
+	background: inherit;
+	border: 2px solid #000000;
+}
+
+.search-button:hover {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.search-button:active span {
+	opacity: 0.3;
+}
+
+.main-navigation a:hover,
+.main-footer a:hover {
+	opacity: 0.6;
+}
+
+.main-navigation a:active,
+.main-footer a:active {
+	opacity: 0.3;
+}
+
+.sliders h3 {
+	font-size: 47px;
+	line-height: 56px;
+	letter-spacing: 0.17px;
+}
+
+.sliders p {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+}
+
+.advantages tr:first-child {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 48px;
+	letter-spacing: 0.36px;
+}
+
+.advantages tr:last-child {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 20px;
+	letter-spacing: 0.13px;
+}
+
+.popular ul,
+.services ul,
+.companies ul {
+	list-style: none;
+}
+
+.popular-items a {
+	font: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+.about-us,
+.contacts {
+	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+	font-size: 47px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 0.21px;
+}
+
+.about-us p,
+.contacts p {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	color: rgb(70, 70, 70);
+}
+
+.about-us .button::before,
+.contacts .button::before {
+	left: -23px;
+
+	width: 260 px;
+}
+
+
+
+.deliveries {
+	list-style: none
+}
+
+.deliveries a {
+	font: inherit;
+	font-size: 16px;
+	line-height: 40px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+.main-footer {
+	color: rgb(255, 255, 255);
+
+	background-color: rgb(70, 70, 70);
+}
+
+.footer-contacts {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.main-footer ul {
+	list-style: none;
+}
+
+.site-footer-navigation a {
+	font: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 3.6px;
+	color: rgb(255, 255, 255);
+}
+
+.user-footer-navigation a,
+.footer-social a {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+	color: rgb(255, 255, 255);
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.user-footer-naviegation a:hover {
+	color: rgb(255, 255, 255);
+	opacity: 1;
+}
+
+.user-footer-navigation a:active {
+	color: rgb(255, 255, 255);
+	opacity: 0.3;
+}
+
+.footer-social a {
+	opacity: 0.3;
+}
+
+.footer-social a:hover {
+	opacity: 0.6;
+}
+
+.footer-social a:active {
+	opacity: 0.1;
+}
+
+.contact-form label {
+	font: inherit;
+	line-height: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	color: rgba(70, 70, 70, 0.4);
+
+
+	background-color: rgb(242, 242, 242);
+	border: none;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+	background-color: #eaeaea;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	color: rgb(70, 70, 70);
+
+	background-color: rgb(255, 255, 255);
+	border: 3px solid rgb(240, 197, 46);
+	outline: none;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+	background-color: #f6dada;
+}
+
+main h1 {
+	font-size: 47px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 0.17px;
+}
+
+.breadcrumbs {
+	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	color: rgba(0, 0, 0, 0.3);
+	list-style: none;
+}
+
+.breadcrumbs a {
+	font: inherit;
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.18px;
+}
