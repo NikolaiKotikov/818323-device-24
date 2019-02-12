@@ -1,399 +1,493 @@
 @font-face {
-	font-family: "Gilroy";
-	font-style: normal;
-	font-weight: 300;
-	src:
-		local("Gilroy"),
-		url("/fonts/gilroylight.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Gilroy";
+
+  src: local("Gilroy"),
+  url("/fonts/gilroylight.woff2") format("woff2");
 }
 
 @font-face {
-	font-family: "Gilroy";
-	font-style: normal;
-	font-weight: 400;
-	src:
-		local("Gilroy Extra Bold"),
-		local("Gilroy-ExtraBold"),
-		url("/fonts/gilroyextrabold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 800;
+  font-family: "Gilroy";
+
+  src: local("Gilroy Extra Bold"),
+  local("Gilroy-ExtraBold"),
+  url("/fonts/gilroyextrabold.woff2") format("woff2");
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 18px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  color: rgb(0, 0, 0);
 
-	background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 .button {
-	position: relative;
+  position: relative;
 
-	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 2.15px;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
 
-	border: none;
-	background-color: inherit;
+  background-color: inherit;
+  border: none;
 }
 
 .button:before {
-	position: absolute;
-	top: 7px;
+  content: "";
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -44px;
+  z-index: -1;
 
-	left: -44px;
-	content: "";
-	width: 220px;
-	height: 8px;
-	background-color: rgb(240, 197, 46);
-	z-index: -1;
+  width: 220px;
+  height: 8px;
 
-	content: "";
+  background-color: rgb(240, 197, 46);
 }
 
 .button:hover::before {
-	height: 40px;
-	top: -10px;
+  top: -10px;
+
+  height: 40px;
 }
 
 .button:active span {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .button-close {
-	color: #ffffff;
-	background-color: #f0c52e;
-	opacity: 0.5;
-	border: none;
+  color: #ffffff;
+
+  background-color: #f0c52e;
+  border: none;
+  opacity: 0.5;
 }
 
 .button-close:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .button-close:active {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 header {
-	background-color: rgba(240, 197, 46, 0.5);
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .search,
 .user-navigation {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	letter-spacing: 0.15px;
-}
-
-.main-navigation a {
-	font: inherit;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-}
-
-.site-navigation a {
-	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
-	letter-spacing: 3.6px;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-}
-
-.main-navigation ul {
-	list-style: none;
-}
-
-.search-label {
-	opacity: 0.3;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0.15px;
 }
 
 .search-field {
-	font: inherit;
-	color: #000000;
-
-	background-color: inherit;
-	border: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
-.search-label:hover {
-	opacity: 0.6;
+.search-field::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-field:focus {
-	border-bottom: 2px solid #000000;
+  color: rgb(0, 0, 0);
+
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+.main-navigation a {
+  color: rgb(0, 0, 0);
+}
+
+.site-navigation a {
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.main-navigation ul {
+  list-style: none;
 }
 
 .search-button {
-	font: inherit;
-	color: #000000;
+  font: inherit;
+  color: rgb(0, 0, 0);
 
-	background: inherit;
-	border: 2px solid #000000;
+  background: inherit;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .search-button:hover {
-	color: #ffffff;
+  color: rgb(255, 255, 255);
 
-	background-color: #000000;
+  background-color: rgb(0, 0, 0);
 }
 
 .search-button:active span {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .main-navigation a:hover,
 .main-footer a:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .main-navigation a:active,
 .main-footer a:active {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .sliders h3 {
-	font-size: 47px;
-	line-height: 56px;
-	letter-spacing: 0.17px;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.17px;
 }
 
 .sliders p {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	letter-spacing: 0.15px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0.15px;
 }
 
 .advantages tr:first-child {
-	font-size: 36px;
-	font-weight: 300;
-	line-height: 48px;
-	letter-spacing: 0.36px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
 }
 
 .advantages tr:last-child {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 20px;
-	letter-spacing: 0.13px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0.13px;
 }
 
 .popular ul,
 .services ul,
 .companies ul {
-	list-style: none;
+  list-style: none;
 }
 
 .popular-items a {
-	font: inherit;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.18px;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.18px;
+}
+
+.services-description h3 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
 }
 
 .about-us,
 .contacts {
-	font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
-	font-size: 47px;
-	font-weight: 400;
-	line-height: 48px;
-	letter-spacing: 0.21px;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0.21px;
 }
 
 .about-us p,
-.contacts p {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	color: rgb(70, 70, 70);
+.contacts p,
+.services-description p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgb(70, 70, 70);
+}
+
+.companies-list img {
+  filter: grayscale(1) opacity(0.2);
+}
+
+.companies-list img:hover {
+  filter: none;
 }
 
 .about-us .button::before,
 .contacts .button::before {
-	left: -23px;
+  left: -23px;
 
-	width: 260 px;
+  width: 260 px;
 }
 
-
-
 .deliveries {
-	list-style: none
+  list-style: none;
 }
 
 .deliveries a {
-	font: inherit;
-	font-size: 16px;
-	line-height: 40px;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
+  font-size: 16px;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
 }
 
 .main-footer {
-	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 
-	background-color: rgb(70, 70, 70);
+  background-color: rgb(70, 70, 70);
 }
 
 .footer-contacts {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 }
 
 .main-footer ul {
-	list-style: none;
+  list-style: none;
 }
 
 .site-footer-navigation a {
-	font: inherit;
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 3.6px;
-	color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .user-footer-navigation a,
 .footer-social a {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 30px;
-	letter-spacing: 0.15px;
-	color: rgb(255, 255, 255);
-	opacity: 0.7;
-	text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.15px;
+
+  opacity: 0.7;
 }
 
 .user-footer-naviegation a:hover {
-	color: rgb(255, 255, 255);
-	opacity: 1;
+  color: rgb(255, 255, 255);
+
+  opacity: 1;
 }
 
 .user-footer-navigation a:active {
-	color: rgb(255, 255, 255);
-	opacity: 0.3;
+  color: rgb(255, 255, 255);
+
+  opacity: 0.3;
 }
 
 .footer-social a {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .footer-social a:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .footer-social a:active {
-	opacity: 0.1;
+  opacity: 0.1;
 }
 
 .contact-form label {
-	font: inherit;
-	line-height: 24px;
+  font: inherit;
+  line-height: 24px;
 }
 
 .contact-form input,
 .contact-form textarea {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	color: rgba(70, 70, 70, 0.4);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgb(70, 70, 70);
 
+  background-color: rgb(242, 242, 242);
+  border: 3px solid rgba(240, 197, 46, 0);
+}
 
-	background-color: rgb(242, 242, 242);
-	border: none;
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4);
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-	background-color: #eaeaea;
+  background-color: #eaeaea;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-	color: rgb(70, 70, 70);
-
-	background-color: rgb(255, 255, 255);
-	border: 3px solid rgb(240, 197, 46);
-	outline: none;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgba(240, 197, 46, 1);
+  outline: none;
 }
 
 .contact-form input:invalid,
 .contact-form textarea:invalid {
-	background-color: #f6dada;
+  background-color: #f6dada;
 }
 
 main h1 {
-	font-size: 47px;
-	font-weight: 400;
-	line-height: 48px;
-	letter-spacing: 0.17px;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.17px;
 }
 
 .breadcrumbs {
-	font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 24px;
-	letter-spacing: 0.14px;
-	color: rgba(0, 0, 0, 0.3);
-	list-style: none;
+  list-style: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.14px;
 }
 
 .breadcrumbs a {
-	font: inherit;
-	color: rgba(0, 0, 0, 0.3);
-	text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs a:hover {
-	color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumbs a:active {
-	color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters h2,
+.sort h2 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .filters fieldset {
-	border: none;
+  border: none;
 }
 
 .filters legend {
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.18px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters output,
+.filters label {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+fieldset:first-child output,
+fieldset:first-child label {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  opacity: 0.6;
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+  color: rgb(166, 166, 166);
+}
+
+.sort ul,
+.catalog ul,
+.pagination-list {
+  list-style: none;
+}
+
+.sort a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active {
+  color: rgb(0, 0, 0);
+}
+
+.catalog h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.18px;
+}
+
+.product-price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(70, 70, 70);
+  letter-spacing: 0.16px;
+}
+
+.pagination-list a {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
 }
