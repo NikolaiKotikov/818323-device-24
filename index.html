@@ -21,16 +21,20 @@
           <button class="search-button" type="submit"><span>Найти</span></button>
         </form>
         <ul class="user-navigation">
-          <li><a class="login-link" href="login.html">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="user-info"><a class="login-link" href="login.html">Войти</a></li>
+          <div class="user-navigation-wrapper">
+            <li><a class="compare" href="#">Сравнить</a></li>
+            <li><a class="cart" href="#">Корзина</a></li>
+          </div>
         </ul>
       </div>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a class="site-navigation-catalog" href="catalog.html">Каталог товаров</a></li>
+        <div class="site-navigation-wrapper">
+          <li><a  href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </div>
       </ul>
     </nav>
   </header>
@@ -194,7 +198,7 @@
         <a class="footer-logo"><img src="img/footer-logo.svg" width="163" height="35"
             alt="Логотип интернет-магазина Device"></a>
         <ul class="user-footer-navigation">
-          <li class="login-link"><a href="#">Войти</a></li>
+          <li class=""><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
