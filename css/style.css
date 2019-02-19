@@ -19,9 +19,9 @@
 }
 
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
+  padding-top: 40px;
 
   font-weight: 800;
   font-size: 18px;
@@ -34,7 +34,7 @@ body {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0 20px;
 }
 
 a {
@@ -110,13 +110,7 @@ a {
   opacity: 0.3;
 }
 
-.main-header {
-  margin-top: 40px;
-  padding-top: 1px;
-  padding-bottom: 1px;
 
-  background-color: rgba(240, 197, 46, 0.5);
-}
 
 .main-header-logo {
   display: block;
@@ -132,8 +126,12 @@ a {
 }
 
 .main-navigation {
+  padding-top: 1px;
   padding-right: 61px;
+  padding-bottom: 1px;
   padding-left: 60px;
+
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .main-navigation ul {
