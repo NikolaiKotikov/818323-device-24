@@ -23,9 +23,10 @@ body {
   padding: 0;
   padding-top: 40px;
 
-  font-weight: 800;
-  font-size: 18px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgb(0, 0, 0);
 
   background-color: rgb(255, 255, 255);
@@ -218,7 +219,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 167px;
+  margin-bottom: 159px;
   padding: 0;
 }
 
@@ -278,7 +279,7 @@ a {
 
   width: 440px;
   margin-top: -6px;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
   margin-left: 1px;
 }
 
@@ -287,7 +288,6 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   letter-spacing: 0.15px;
 }
 
@@ -332,6 +332,10 @@ a {
 }
 
 .site-navigation a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -389,7 +393,6 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   letter-spacing: 0.15px;
 }
 
@@ -404,7 +407,6 @@ a {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   letter-spacing: 0.13px;
 }
 
@@ -443,7 +445,6 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgb(70, 70, 70);
 }
 
@@ -500,7 +501,6 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 }
 
 .footer-top {
@@ -570,7 +570,6 @@ a {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgb(255, 255, 255);
   letter-spacing: 0.15px;
 
@@ -611,7 +610,6 @@ a {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgb(70, 70, 70);
 
   background-color: rgb(242, 242, 242);
@@ -655,7 +653,6 @@ main h1 {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.14px;
 }
@@ -724,7 +721,6 @@ main h1 {
 .filters label {
   font-weight: 300;
   font-size: 14px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgb(0, 0, 0);
 }
 
@@ -753,7 +749,6 @@ input[type="radio"]:disabled {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
