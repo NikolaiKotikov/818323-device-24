@@ -163,6 +163,7 @@ a {
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 520px;
   margin: 0;
@@ -245,15 +246,23 @@ a {
 
 .site-navigation-wrapper {
   display: flex;
-  width: 499px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 500px;
 }
 
-.site-navigation-wrapper li:nth-child(1) {
-  margin-right: 34px;
+.site-navigation-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 273px;
 }
 
-.site-navigation-wrapper li:nth-child(2) {
-  margin-right: 108px;
+.site-navigation-contacts {
+  width: 220px;
+  margin-right: -3px;
+
+  text-align: right;
 }
 
 .site-navigation .site-navigation-catalog:hover {
