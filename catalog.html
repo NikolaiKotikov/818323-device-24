@@ -10,7 +10,56 @@
 </head>
 
 <body class="catalog-page">
-  <header class="main-header container">
+    <header class="main-header container">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+          </a>
+          <div class="main-navigation-wrapper">
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+              <input class="search-field" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit"><span>Найти</span></button>
+            </form>
+            <ul class="user-navigation">
+              <div class="user-info-wrapper">
+              <li class="user-info"><a class="login-link" href="login.html">Валентин Петухов</a></li>
+              <li class="logout"><a class="logout-link" href="#">Выйти</a></li>
+            </div>
+              <div class="user-navigation-wrapper">
+                <li><a class="compare" href="#">Сравнить</a></li>
+                <li><a class="cart" href="#">Корзина</a></li>
+              </div>
+            </ul>
+          </div>
+          <ul class="site-navigation">
+            <li>
+              <a class="site-navigation-catalog" href="catalog.html">Каталог товаров</a>
+              <div class="catalog-menu visually-hidden">
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+            </li>
+            <div class="site-navigation-wrapper">
+              <div class="site-navigation-column">
+                <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
+                <li class="site-navigation-warranty"><a href="#">Гарантия</a></li>
+              </div>
+                <li class="site-navigation-contacts"><a href="#">Контакты</a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+<!--   <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
@@ -34,7 +83,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
   <main class="container">
     <h1>Моноподы для селфи</h1>
     <ul class="breadcrumbs">

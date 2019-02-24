@@ -201,6 +201,26 @@ input[type="radio"].visually-hidden {
   padding-left: 30px;
 }
 
+.user-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 248px;
+}
+
+.user-info {
+  width: 170px;
+}
+
+.logout {
+  width: 50px;
+}
+
+.logout .logout-link {
+  padding: 0;
+
+  opacity: 0.3;
+}
 
 .user-info,
 .compare,
@@ -312,7 +332,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-page .site-navigation {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .search {
@@ -1050,4 +1070,13 @@ input[type="radio"]:disabled {
   margin-top: 0;
   margin-bottom: 29px;
   margin-left: 61px;
+}
+
+.catalog-page .main-navigation::after {
+  z-index: -5;
+}
+
+.catalog-page .main-header-logo {
+  margin-top: -17px;
+  margin-bottom: 24px;
 }
