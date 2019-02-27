@@ -19,7 +19,7 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   padding-top: 40px;
@@ -214,6 +214,10 @@ input[type="radio"].visually-hidden {
 
 .logout {
   width: 50px;
+}
+
+.footer-info-wrapper .logout {
+  margin-left: 21px;
 }
 
 .logout .logout-link {
@@ -720,6 +724,9 @@ input[type="radio"].visually-hidden {
   width: 32px;
   height: 32px;
   padding-top: 6px;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-fb {
@@ -742,6 +749,7 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
   width: 80px;
+  margin-top: 21px;
 
   text-align: right;
 }
@@ -751,7 +759,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 67px;
+  margin-bottom: 43px;
 }
 
 .footer-bottom::before {
@@ -785,53 +793,90 @@ input[type="radio"].visually-hidden {
 .user-footer-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  width: 480px;
+  justify-content: space-between;
+  width: 488px;
   margin: 0;
   padding: 0;
 }
 
+.footer-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 240px;
+}
+
+.footer-info-wrapper li:last-child {
+  width: 50px;
+}
+
+.footer-navigation-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 221px;
+}
+
+.footer-navigation-wrapper li:last-child {
+  width: 58px;
+}
+
 .user-footer-navigation li {
   margin-top: -2px;
-  margin-left: 33px;
   padding-left: 30px;
+}
+
+.footer-info-wrapper .logout {
+  padding-left: 0;
 }
 
 .user-footer-navigation a {
   position: relative;
 }
 
-.user-footer-navigation a::before {
+.footer-login::before {
   content: "";
   position: absolute;
+  top: 3px;
+  left: -27px;
 
   width: 14px;
   height: 14px;
 
   background-color: rgb(70, 70, 70);
+  background-image: url(../img/user-footer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.footer-login::before {
-  top: 3px;
-  left: -27px;
-
-  background-image: url(../img/user-footer.svg);
-}
-
 .footer-compare::before {
+  content: "";
+  position: absolute;
   top: 4px;
   left: -21px;
 
+  width: 14px;
+  height: 14px;
+
+  background-color: rgb(70, 70, 70);
   background-image: url(../img/compare-footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-cart::before {
+  content: "";
+  position: absolute;
   top: 3px;
   left: -23px;
 
+  width: 14px;
+  height: 14px;
+
+  background-color: rgb(70, 70, 70);
   background-image: url(../img/cart-footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
