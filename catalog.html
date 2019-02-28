@@ -59,14 +59,18 @@
           </ul>
         </nav>
       </header>
-  <main class="container">
+  <main>
+    <div  class="container">
     <h1>Моноподы для селфи</h1>
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог товаров</a></li>
+      <li class="breadcrumbs-main"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs-catalog"><a href="#">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
-    <div class="catalog-columns container">
+  </div>
+  <div class="catalog-columns-wrapper">
+    <div class="left-column"></div>
+    <div class="central-column container">
       <section class="filters">
         <!-- <h2>Фильтр:</h2> -->
         <form class="filter" action="https://echo.htmlacademy.ru" method="get"
@@ -84,46 +88,51 @@
             <output name="maxoutput">5000</output>
           </p>
         </fieldset> -->
-          <fieldset>
+          <fieldset class="filter-option">
             <legend>Цвет</legend>
             <ul>
               <li>
+
+                <input class="visually-hidden input-checkbox" type="checkbox" name="black" id="filter-black" checked>
                 <label for="filter-black">Черный</label>
-                <input type="checkbox" name="black" id="filter-black" checked>
               </li>
               <li>
+
+                <input class="visually-hidden input-checkbox" type="checkbox" name="white" id="filter-white">
                 <label for="filter-white">Белый</label>
-                <input type="checkbox" name="white" id="filter-white">
               </li>
               <li>
+
+                <input class="visually-hidden input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
                 <label for="filter-blue">Синий</label>
-                <input type="checkbox" name="blue" id="filter-blue" checked>
               </li>
               <li>
+
+                <input class="visually-hidden input-checkbox" type="checkbox" name="red" id="filter-red" checked>
                 <label for="filter-red">Красный</label>
-                <input type="checkbox" name="red" id="filter-red" checked>
               </li>
               <li>
+
+                <input class="visually-hidden input-checkbox" type="checkbox" name="pink" id="filter-pink" disabled>
                 <label for="filter-pink">Розовый</label>
-                <input type="checkbox" name="pink" id="filter-pink" disabled>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset  class="filter-option bluetooth">
             <legend>Bluetooth</legend>
             <ul>
               <li>
-                <input type="radio" name="bluetooth-availability" value="available" id="filter-available" checked>
+                <input class="visually-hidden radio-checkbox"  type="radio" name="bluetooth-availability" value="available" id="filter-available" checked>
                 <label for="filter-available">Есть</label>
               </li>
               <li>
-                <input type="radio" name="bluetooth-availability" value="not-available" id="filter-not-available"
-                  disabled>
+                <input class="visually-hidden radio-checkbox" type="radio" name="bluetooth-availability" value="not-available" id="filter-not-available" disabled
+                  >
                 <label for="filter-not-available">Нет</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button" type="submit"><span class="button-text">Показать</span></button>
         </form>
       </section>
       <!--<section class="sort">
@@ -179,6 +188,8 @@
       <li class="pagination-item"><a href="#">Назад</a></li>
       <li class="pagination-item "><a href="#">Вперёд</a></li>
     </ul> -->
+    <div class="right-column"></div>
+  </div>
   </main>
   <footer class="main-footer">
       <div class="container">

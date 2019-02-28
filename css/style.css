@@ -69,6 +69,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   position: relative;
+  z-index: 2;
 
   display: inline-block;
 
@@ -88,19 +89,11 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 8px;
-  left: auto;
   z-index: -1;
 
-  width: 100%;
   height: 8px;
 
   background-color: rgb(240, 197, 46);
-}
-
-.button:hover::before {
-  top: -10px;
-
-  height: 40px;
 }
 
 .button:active span {
@@ -610,11 +603,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: -0.19px;
 }
 
-.about-us .button-text {
-  margin-left: 2px;
-  padding: 0 20px;
-}
-
 .about-us-title,
 .contacts-title {
   position: relative;
@@ -633,18 +621,27 @@ input[type="radio"].visually-hidden {
   background-color: rgb(0, 0, 0);
 }
 
+.about-us .button {
+  margin-left: 22px;
+}
+
+.about-us .button::before {
+  right: -19px;
+  left: -22px;;
+}
+
 .contacts {
   width: 563px;
   padding-top: 55px;
 }
 
 .contacts .button {
-  margin-left: 3px;
+  margin-left: 43px;
 }
 
-.contacts .button-text {
-  margin-left: 3px;
-  padding: 0 37px;
+.contacts .button::before {
+  right: -37px;
+  left: -40px;
 }
 
 .contacts-title::before {
@@ -974,7 +971,10 @@ main h1 {
 
 .breadcrumbs {
   display: flex;
-  padding-left: 61px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-left: 58px;
 
   list-style: none;
   font-weight: 300;
@@ -982,6 +982,33 @@ main h1 {
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.14px;
+}
+
+.breadcrumbs li:not(:last-child) {
+  position: relative;
+
+  margin-right: 38px;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url(../img/nav-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-catalog::after {
+  right: -22px;
+}
+
+.breadcrumbs-main::after {
+  right: -20px;
 }
 
 .breadcrumbs a {
@@ -996,7 +1023,7 @@ main h1 {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.catalog-columns {
+.central-column {
   display: flex;
   justify-content: space-between;
 }
@@ -1019,6 +1046,11 @@ main h1 {
 
 .filters {
   width: 330px;
+  margin-right: 31px;
+  padding-top: 227px;
+  padding-left: 59px;
+
+  background-color: rgb(239, 239, 239);
 }
 
 .filters h2,
@@ -1034,26 +1066,39 @@ main h1 {
 }
 
 .filters legend {
+  position: relative;
+
+  margin-bottom: 13px;
+  margin-left: 7px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
   letter-spacing: 0.18px;
 }
 
-.filters ul {
-  list-style: none;
+.filters legend::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 1px;
+
+  width: 201px;
+  height: 2px;
+
+  background-color: black;
 }
 
-.filters output,
 .filters label {
-  font-weight: 300;
-  font-size: 14px;
-  color: rgb(0, 0, 0);
+  line-height: 40px;
 }
 
-fieldset:first-child output,
-fieldset:first-child label {
-  color: rgba(0, 0, 0, 0.2);
+.filters ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 input[type="checkbox"]:hover,
@@ -1113,8 +1158,11 @@ input[type="radio"]:disabled {
 
 .catalog-page h1 {
   margin-top: 0;
-  margin-bottom: 29px;
-  margin-left: 61px;
+  margin-bottom: 24px;
+  margin-left: 59px;
+
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  letter-spacing: 0.6px;
 }
 
 .catalog-page .main-navigation::after {
@@ -1124,4 +1172,118 @@ input[type="radio"]:disabled {
 .catalog-page .main-header-logo {
   margin-top: -17px;
   margin-bottom: 24px;
+}
+
+.catalog-page .main-header {
+  margin-bottom: 37px;
+}
+.catalog-columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  flex-grow: 1;
+}
+
+.left-column {
+  background-color: rgb(238, 238, 238);
+}
+
+.central-column.container {
+  padding-left: 0;
+}
+
+.filter-option {
+  margin-bottom: 32px;
+}
+
+.bluetooth {
+  margin-bottom: 27px;
+}
+
+.filters .button {
+  margin-left: 55px;
+}
+
+.filters .button::before {
+  top: 9px;
+  right: -32px;
+  left: -35px;
+}
+
+.button:hover::before {
+  top: -10px;
+
+  height: 40px;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+  margin-left: 45px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -39px;
+
+  width: 23px;
+  height: 23px;
+
+  background-color: rgb(238, 238, 238);
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-checkbox:checked + label::before {
+  width: 27px;
+
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.input-checkbox + label:hover::before,
+.radio-checkbox + label:hover::before {
+  opacity: 0.6;
+}
+
+.input-checkbox:disabled + label,
+.input-checkbox:disabled + label::before,
+.radio-checkbox:disabled + label,
+.radio-checkbox:disabled + label::before {
+  opacity: 0.25;
+}
+
+
+.input-checkbox + label:active::before,
+.radio-checkbox + label:active::before {
+  opacity: 1;
+}
+
+.radio-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -41px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: rgb(238, 238, 238);
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio-checkbox:checked + label::before {
+  background-image: url(../img/radio-on.svg);
 }
