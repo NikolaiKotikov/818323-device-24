@@ -1133,17 +1133,25 @@ input[type="radio"]:disabled {
 }
 
 .catalog h3 {
+  width: 260px;
+  padding: 0;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 0.18px;
 }
 
 .product-price {
+  width: 80px;
+  padding: 0;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
   color: rgb(70, 70, 70);
   letter-spacing: 0.16px;
 }
@@ -1286,4 +1294,11 @@ input[type="radio"]:disabled {
 
 .radio-checkbox:checked + label::before {
   background-image: url(../img/radio-on.svg);
+}
+
+.products-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 360px;
 }
