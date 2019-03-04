@@ -69,10 +69,14 @@
     </ul>
   </div>
   <div class="catalog-columns-wrapper">
-    <div class="left-column"></div>
+    <div class="left-column">
+      <div></div>
+    </div>
     <div class="central-column container">
+
       <section class="filters">
-        <!-- <h2>Фильтр:</h2> -->
+
+        <h2>Фильтр:</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get"
           oninput="minoutput.value=mincost.value; maxoutput.value=maxcost.value">
           <!-- <fieldset>
@@ -135,19 +139,20 @@
           <button class="button" type="submit"><span class="button-text">Показать</span></button>
         </form>
       </section>
-      <!--<section class="sort">
-      <h2>Сортировка:</h2>
-      <ul class="sort-type-list">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По популярности</a></li>
-      </ul>
-      <ul class="sort-range-list">
-        <li><a href="#">По возрастанию</a></li>
-        <li><a href="#">По убыванию</a></li>
-      </ul>
-    </section> -->
+
       <section class="catalog">
+          <section class="sort">
+              <h2>Сортировка:</h2>
+              <ul class="sort-type-list">
+                <li><a class="sort-type-current" href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+              </ul>
+              <ul class="sort-range-list">
+                <li><a class="ascending " href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li><a class="descending sort-range-current" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              </ul>
+            </section>
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="products">
           <li class="products-item">
@@ -192,7 +197,9 @@
       <li class="pagination-item"><a href="#">Назад</a></li>
       <li class="pagination-item "><a href="#">Вперёд</a></li>
     </ul> -->
-    <div class="right-column"></div>
+    <div class="right-column">
+      <div></div>
+    </div>
   </div>
   </main>
   <footer class="main-footer">
