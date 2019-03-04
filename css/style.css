@@ -1045,6 +1045,11 @@ main h1 {
   margin-right: 0;
 }
 
+.products li:nth-child(1),
+.products li:nth-child(2) {
+  margin-bottom: 45px;
+}
+
 .filters {
   width: 328px;
 
@@ -1137,7 +1142,6 @@ input[type="radio"]:disabled {
 .catalog h3 {
   width: 260px;
   margin: 0;
-  margin-top: 10px;
   padding: 0;
 
   font-weight: 800;
@@ -1151,7 +1155,6 @@ input[type="radio"]:disabled {
 .product-price {
   width: 80px;
   margin: 0;
-  margin-top: 11px;
   padding: 0;
 
   font-weight: 400;
@@ -1305,9 +1308,12 @@ input[type="radio"]:disabled {
 }
 
 .products-item {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
   width: 360px;
 }
 
@@ -1435,4 +1441,50 @@ input[type="radio"]:disabled {
 
 .sort-range-current::before {
   opacity: 1;
+}
+
+.item-photo {
+  width: 360px;
+  height: 380px;
+  margin-bottom: 32px;
+}
+
+.item-new {
+  position: absolute;
+  top: 29px;
+  right: 27px;
+
+  width: 56px;
+  height: 56px;
+  margin: 0;
+
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  text-align: center;
+  color: rgb(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  /* background-color: rgb(205, 57, 68, 0.1); */
+
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.item-new span {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+}
+
+.products-item .button {
+  position: absolute;
+  top: 179px;
+  left: 117px;
+}
+
+.products-item .button::before {
+  right: -36px;
+  left: -36px;
 }
