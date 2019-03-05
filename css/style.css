@@ -1478,6 +1478,19 @@ input[type="radio"]:disabled {
   left: 13px;
 }
 
+.item-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 360px;
+  height: 379px;
+  margin: 0;
+
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
 .products-item .button {
   position: absolute;
   top: 179px;
@@ -1487,4 +1500,13 @@ input[type="radio"]:disabled {
 .products-item .button::before {
   right: -36px;
   left: -36px;
+}
+
+
+.item-photo:hover + .item-cover {
+  z-index: 1;
+}
+
+.item-cover:hover {
+  z-index: 1;
 }
