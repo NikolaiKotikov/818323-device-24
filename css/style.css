@@ -1166,11 +1166,13 @@ input[type="radio"]:disabled {
 }
 
 .pagination-list a {
+  font-weight: 800;
   font-size: 16px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.6px;
 }
 
 .catalog-page h1 {
@@ -1613,4 +1615,32 @@ input[type="radio"]:disabled {
 .range-toggle:active {
   border-width: 9px;
   transform: translate(-1px, -1px);
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin: 0;
+  margin-top: 35px;
+  margin-left: 72px;
+  padding: 18px 30px;
+
+  background-color: rgba(235, 235, 235);
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+}
+
+.backwards {
+  width: 70px;
+}
+
+.forwards {
+  width: 80px;
+
+  text-align: right;
 }
