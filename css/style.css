@@ -1074,7 +1074,6 @@ main h1 {
 .filters legend {
   position: relative;
 
-  margin-bottom: 13px;
   margin-left: 7px;
 
   font-weight: 800;
@@ -1215,11 +1214,19 @@ input[type="radio"]:disabled {
 }
 
 .filter-option {
-  margin-bottom: 32px;
+  margin-bottom: 35px;
+}
+
+.filter-option legend {
+  margin-bottom: 12px;
+}
+
+.bluetooth legend {
+  margin-bottom: 11px;
 }
 
 .bluetooth {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .filters .button {
@@ -1489,6 +1496,7 @@ input[type="radio"]:disabled {
   margin: 0;
 
   background-color: rgba(238, 238, 238, 0.7);
+  cursor: pointer;
 }
 
 .products-item .button {
@@ -1528,4 +1536,81 @@ input[type="radio"]:disabled {
 
 .item-compare:active {
   color: rgb(0, 0, 0, 0.2);
+}
+
+.price-controls {
+  width: 200px;
+  margin-left: 8px;
+}
+
+.price-controls label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-controls input {
+  width: 68px;
+  margin-bottom: 35px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  color: rgba(0, 0, 0, 0.2);
+
+  background: inherit;
+  border: none;
+}
+
+.scale {
+  width: 196px;
+  height: 2px;
+  margin-bottom: 5px;
+  margin-left: 13px;
+
+  background-color: rgb(219, 219, 219);
+}
+
+.bar {
+  width: 56%;
+  height: 2px;
+
+  background-color: rgb(145, 201, 47);
+}
+
+.filter-range {
+  position: relative;
+}
+
+.filter-range legend {
+  margin-bottom: 30px;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 49px;
+
+  width: 4px;
+  height: 4px;
+
+  background: rgb(171, 171, 171);
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgb(218, 218, 218);
+}
+
+.range-toggle-min {
+  left: 14px;
+}
+
+.range-toggle-max {
+  left: 127px;
+}
+
+.range-toggle:active {
+  border-width: 9px;
+  transform: translate(-1px, -1px);
 }
