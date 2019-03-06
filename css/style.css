@@ -1510,3 +1510,22 @@ input[type="radio"]:disabled {
 .item-cover:hover {
   z-index: 1;
 }
+
+.item-compare {
+  position: absolute;
+  top: 217px;
+  left: 109px;
+
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.13px;
+}
+
+.item-compare:hover {
+  color: rgb(0, 0, 0);
+}
+
+.item-compare:active {
+  color: rgb(0, 0, 0, 0.2);
+}
