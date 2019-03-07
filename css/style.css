@@ -801,6 +801,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 240px;
+  margin-left: -1px;
 }
 
 .footer-info-wrapper li:last-child {
@@ -812,6 +813,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 221px;
+  margin-right: 2px;
 }
 
 .footer-navigation-wrapper li:last-child {
@@ -1620,27 +1622,72 @@ input[type="radio"]:disabled {
 .pagination-list {
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  width: 760px;
   margin: 0;
   margin-top: 35px;
+  margin-bottom: 77px;
   margin-left: 72px;
-  padding: 18px 30px;
+  padding: 0;
 
-  background-color: rgba(235, 235, 235);
+  background-color: rgb(235, 235, 235);
 }
 
 .pagination-wrapper {
   display: flex;
   justify-content: center;
-  width: 160px;
+  width: 400px;
+  margin-left: 16px;
+  padding-top: 21px;
 }
 
-.backwards {
-  width: 70px;
+.pagination-wrapper li:not(:first-child) {
+  margin-left: 27px;
 }
 
-.forwards {
-  width: 80px;
+.pagination-wrapper a {
+  color: rgba(0, 0, 0, 0.3);
+}
 
-  text-align: right;
+.pagination-current a {
+  color: rgb(0, 0, 0);
+}
+
+.pagination-wrapper a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-wrapper a:active {
+  color: rgb(0, 0, 0);
+}
+
+.prev a {
+  display: block;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-bottom: 22px;
+  padding-left: 29px;
+
+  background-color: rgb(235, 235, 235);
+}
+
+.next a {
+  display: block;
+  padding-top: 24px;
+  padding-right: 26px;
+  padding-bottom: 22px;
+  padding-left: 32px;
+
+  background-color: rgb(235, 235, 235);
+}
+
+.prev a:hover,
+.next a:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.prev a:active,
+.next a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: rgb(216, 216, 216);
 }
