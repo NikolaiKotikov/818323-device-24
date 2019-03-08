@@ -33,6 +33,10 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -81,7 +85,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 3.66px;
 
-  background-color: inherit;
+  background-color: transparent;
   border: none;
 }
 
@@ -402,12 +406,14 @@ input[type="radio"].visually-hidden {
 .catalog-menu {
   position: absolute;
   top: 28px;
+  left: -60px;
   z-index: 2;
 
   display: none;
-  width: 100%;
+  width: 1100px;
   height: 139px;
   padding-top: 23px;
+  padding-left: 60px;
 
   background-color: rgb(248, 226, 150);
 }
@@ -522,8 +528,6 @@ input[type="radio"].visually-hidden {
 .companies-list img:hover {
   filter: none;
 }
-
-
 
 .deliveries {
   margin: 0;
@@ -1053,7 +1057,20 @@ main h1 {
 }
 
 .filters {
+  position: relative;
+
   width: 328px;
+
+  background-color: rgb(239, 239, 239);
+}
+
+.filters::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: -10000px;
 
   background-color: rgb(239, 239, 239);
 }
@@ -1132,7 +1149,8 @@ input[type="radio"]:disabled {
   letter-spacing: 0.2px;
 }
 
-.sort a:hover {
+.sort a:hover,
+.sort a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1243,7 +1261,8 @@ input[type="radio"]:disabled {
   left: -35px;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before {
   top: -10px;
 
   height: 40px;
@@ -1282,7 +1301,9 @@ input[type="radio"]:disabled {
 }
 
 .input-checkbox + label:hover::before,
-.radio-checkbox + label:hover::before {
+.radio-checkbox + label:hover::before,
+.input-checkbox:focus + label::before,
+.radio-checkbox:focus + label::before {
   opacity: 0.6;
 }
 
@@ -1329,6 +1350,8 @@ input[type="radio"]:disabled {
 }
 
 .sort {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1336,6 +1359,18 @@ input[type="radio"]:disabled {
   margin-bottom: 70px;
   padding-top: 18px;
   padding-bottom: 22px;
+
+  background-color: rgb(235, 235, 235);
+}
+
+.sort::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+
+  width: 10000px;
 
   background-color: rgb(235, 235, 235);
 }
@@ -1354,12 +1389,25 @@ input[type="radio"]:disabled {
 }
 
 .filters h2 {
+  position: relative;
+
   margin-bottom: 81px;
   padding-top: 23px;
   padding-bottom: 23px;
   padding-left: 60px;
 
   letter-spacing: 3.6px;
+
+  background-color: rgb(219, 219, 219);
+}
+
+.filters h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: -10000px;
 
   background-color: rgb(219, 219, 219);
 }
@@ -1437,7 +1485,9 @@ input[type="radio"]:disabled {
 }
 
 .ascending:hover::before,
-.descending:hover::before {
+.descending:hover::before,
+.ascending:focus::before,
+.descending:focus::before {
   opacity: 0.4;
 }
 
@@ -1515,7 +1565,8 @@ input[type="radio"]:disabled {
 }
 
 
-.item-photo:hover + .item-cover {
+.item-photo:hover + .item-cover,
+.item-photo:focus + .item-cover {
   z-index: 1;
 }
 
