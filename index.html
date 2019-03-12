@@ -20,15 +20,16 @@
           <input class="search-field" type="text" name="search" placeholder="Поиск по сайту">
           <button class="search-button" type="submit"><span>Найти</span></button>
         </form>
-        <ul class="user-navigation">
-          <div class="user-info-wrapper">
+        <section class="user-navigation">
+          <h2 class="visually-hidden">Навигация пользователя</h2>
+          <ul class="user-info-wrapper">
             <li class="user-info"><a class="login-link" href="login.html">Войти</a></li>
-          </div>
-          <div class="user-navigation-wrapper">
+          </ul>
+          <ul class="user-navigation-wrapper">
             <li><a class="compare" href="#">Сравнить</a></li>
             <li><a class="cart" href="#">Корзина</a></li>
-          </div>
-        </ul>
+          </ul>
+        </section>
       </div>
       <ul class="site-navigation">
         <li>
@@ -48,13 +49,15 @@
             </ul>
           </div>
         </li>
-        <div class="site-navigation-wrapper">
-          <div class="site-navigation-column">
+        <li class="site-navigation-wrapper">
+          <ul class="site-navigation-column">
             <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
             <li class="site-navigation-warranty"><a href="#">Гарантия</a></li>
-          </div>
-          <li class="site-navigation-contacts"><a href="#">Контакты</a></li>
-        </div>
+          </ul>
+          <ul class="site-navigation-contacts">
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
@@ -190,10 +193,10 @@
     <section class="companies container">
       <h2 class="visually-hidden">На нашем сайте представлена продукция популярных брендов:</h2>
       <ul class="companies-list">
-        <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="Dji"></a></li>
-        <li><a href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="Sp Gadgets"></a></li>
-        <li><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="Go Pro"></a></li>
-        <li><a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="Vive"></a></li>
+        <li><a class="companies-list-item--1" href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="Dji"></a></li>
+        <li><a class="companies-list-item--2" href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="Sp Gadgets"></a></li>
+        <li><a class="companies-list-item--3" href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="Go Pro"></a></li>
+        <li><a class="companies-list-item--4" href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="Vive"></a></li>
       </ul>
     </section>
     <div class="info-columns container">
@@ -221,8 +224,8 @@
           бывает.
         </p>
         <p>
-          <a class="contact-map" target="blank" href="https://goo.gl/maps/T8c4dMJwpto"><img src="img/map.jpg" width="560" height="222"
-              alt="Наш адрес: г. Москва, ул. строителей, 15"></a>
+          <a class="contact-map" target="blank" href="https://goo.gl/maps/T8c4dMJwpto"><img src="img/map.jpg"
+              width="560" height="222" alt="Наш адрес: г. Москва, ул. строителей, 15"></a>
         </p>
         <a class="button contacts-button" href="#"><span class="button-text">Напишите нам</span></a>
       </section>
@@ -234,13 +237,17 @@
         <a class="footer-logo"><img src="img/footer-logo.svg" width="163" height="35"
             alt="Логотип интернет-магазина Device"></a>
         <ul class="user-footer-navigation">
-          <div class="footer-info-wrapper">
-            <li><a class="footer-login" href="#">Войти</a></li>
-          </div>
-          <div class="footer-navigation-wrapper">
-            <li><a class="footer-compare" href="#">Сравнить</a></li>
-            <li><a class="footer-cart" href="#  ">Корзина</a></li>
-          </div>
+          <li>
+            <ul class="footer-info-wrapper">
+              <li><a class="footer-login" href="#">Войти</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul  class="footer-navigation-wrapper">
+              <li><a class="footer-compare" href="#">Сравнить</a></li>
+              <li><a class="footer-cart" href="#  ">Корзина</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="footer-navigation footer-middle">
@@ -291,7 +298,7 @@
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1552408030911"
-      width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+      width="960" height="559" style="border:0" allowfullscreen></iframe>
     <button class="button-close map-button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <script>
