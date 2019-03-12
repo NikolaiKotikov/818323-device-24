@@ -21,9 +21,9 @@
           <button class="search-button" type="submit"><span>Найти</span></button>
         </form>
         <ul class="user-navigation">
-            <div class="user-info-wrapper">
-          <li class="user-info"><a class="login-link" href="login.html">Войти</a></li>
-            </div>
+          <div class="user-info-wrapper">
+            <li class="user-info"><a class="login-link" href="login.html">Войти</a></li>
+          </div>
           <div class="user-navigation-wrapper">
             <li><a class="compare" href="#">Сравнить</a></li>
             <li><a class="cart" href="#">Корзина</a></li>
@@ -53,22 +53,25 @@
             <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
             <li class="site-navigation-warranty"><a href="#">Гарантия</a></li>
           </div>
-            <li class="site-navigation-contacts"><a href="#">Контакты</a></li>
+          <li class="site-navigation-contacts"><a href="#">Контакты</a></li>
         </div>
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Интернет-магазин Device</h1>
-    <section class="slider">
+    <section class="slider container">
       <h2 class="visually-hidden">Лучшие товары</h2>
       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
       <input class="visually-hidden" type="radio" id="product-3" name="toggle">
       <div class="slider-controls">
-        <label class="slider-controls-item slider-controls-item--1" for="product-1"><span class="visually-hidden">Первый</span></label>
-        <label class="slider-controls-item slider-controls-item--2" for="product-2"><span class="visually-hidden">Второй</span></label>
-        <label class="slider-controls-item slider-controls-item--3" for="product-3"><span class="visually-hidden">Третий</span></label>
+        <label class="slider-controls-item slider-controls-item--1" for="product-1"><span
+            class="visually-hidden">Первый</span></label>
+        <label class="slider-controls-item slider-controls-item--2" for="product-2"><span
+            class="visually-hidden">Второй</span></label>
+        <label class="slider-controls-item slider-controls-item--3" for="product-3"><span
+            class="visually-hidden">Третий</span></label>
       </div>
       <ol class="slider-list">
         <li class="slider-item">
@@ -93,7 +96,7 @@
             </table>
           </section>
         </li>
-        <li  class="slider-item">
+        <li class="slider-item">
           <section class="slider-wrapper">
             <h3 class="slider-title">Худеем<br>правильно!</h3>
             <p>
@@ -118,7 +121,6 @@
               камеру.
             </p>
             <a class="button slider-button" href="#"><span>Подробнее</span></a>
-            <!-- <a href="#"><img src="img/slider-3.png" width="526" height="334" alt="Фото квадрокоптера с лазером"></a> -->
             <table class="advantages">
               <tr>
                 <td class="column-1">800 м</td>
@@ -133,44 +135,50 @@
         </li>
       </ol>
     </section>
-    <!--
-    <section class="popular">
+
+    <section class="popular container">
       <h2 class="visually-hidden">Популярные товары:</h2>
-      <ul class="popular-items">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
+      <ul class="popular-list">
+        <li class="popular-item popular-item--1"><a class="popular-link" href="#">Виртуальная реальность</a></li>
+        <li class="popular-item popular-item--2"><a class="popular-link" href="#">Моноподы<br>для селфи</a></li>
+        <li class="popular-item popular-item--3"><a class="popular-link" href="#">Экшн-камеры</a></li>
+        <li class="popular-item popular-item--4"><a class="popular-link" href="#">Фитнес-браслеты</a></li>
+        <li class="popular-item popular-item--5"><a class="popular-link" href="#">Умные часы</a></li>
+        <li class="popular-item popular-item--6"><a class="popular-link" href="#">Квадрокоптеры</a></li>
       </ul>
+
+
     </section>
-    <section class="services">
+
+    <section class="services container">
       <h2 class="visually-hidden">Наши сервисы:</h2>
-      <ul class="servises-list">
-        <li><button class="button">Доставка</button></li>
-        <li><button class="button">Гарантия</button></li>
-        <li><button class="button">Кредит</button></li>
-      </ul>
-      <ul class="services-description">
-        <li>
+      <input class="visually-hidden" type="radio" id="services-1" name="services-toggle" checked>
+      <input class="visually-hidden" type="radio" id="services-2" name="services-toggle">
+      <input class="visually-hidden" type="radio" id="services-3" name="services-toggle">
+      <div class="tab-controls">
+        <label class="button services-button" for="services-1">Доставка</label>
+        <label class="button services-button" for="services-2">Гарантия</label>
+        <label class="button services-button" for="services-3">Кредит</label>
+      </div>
+      <ul class="services-list">
+        <li class="services-item">
           <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </li>
-        <li>
+        <li class="services-item">
           <h3>Гарантия</h3>
           <p>
-            Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+            новый.<br>Товар, не дом, конечно же.
           </p>
         </li>
-        <li>
+        <li class="services-item">
           <h3>Кредит</h3>
           <p>
-            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br>условия
             кредита.
             Выгодные для нашего банка, разумеется.
           </p>
@@ -178,7 +186,8 @@
       </ul>
     </section>
 
-    <section class="companies">
+
+    <section class="companies container">
       <h2 class="visually-hidden">На нашем сайте представлена продукция популярных брендов:</h2>
       <ul class="companies-list">
         <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="Dji"></a></li>
@@ -186,8 +195,8 @@
         <li><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="Go Pro"></a></li>
         <li><a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="Vive"></a></li>
       </ul>
-    </section>  -->
-    <div class="info-columns">
+    </section>
+    <div class="info-columns container">
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
         <p>
@@ -212,10 +221,10 @@
           бывает.
         </p>
         <p>
-          <a href="#"><img src="img/map.jpg" width="560" height="222"
+          <a class="contact-map" target="blank" href="https://goo.gl/maps/T8c4dMJwpto"><img src="img/map.jpg" width="560" height="222"
               alt="Наш адрес: г. Москва, ул. строителей, 15"></a>
         </p>
-        <a class="button" href="#"><span class="button-text">Напишите нам</span></a>
+        <a class="button contacts-button" href="#"><span class="button-text">Напишите нам</span></a>
       </section>
     </div>
   </main>
@@ -224,15 +233,15 @@
       <div class="footer-top">
         <a class="footer-logo"><img src="img/footer-logo.svg" width="163" height="35"
             alt="Логотип интернет-магазина Device"></a>
-            <ul class="user-footer-navigation">
-                <div class="footer-info-wrapper">
-                    <li><a class="footer-login" href="#">Войти</a></li>
-              </div>
-              <div class="footer-navigation-wrapper">
-                <li><a class="footer-compare" href="#">Сравнить</a></li>
-                <li><a class="footer-cart" href="#  ">Корзина</a></li>
-              </div>
-              </ul>
+        <ul class="user-footer-navigation">
+          <div class="footer-info-wrapper">
+            <li><a class="footer-login" href="#">Войти</a></li>
+          </div>
+          <div class="footer-navigation-wrapper">
+            <li><a class="footer-compare" href="#">Сравнить</a></li>
+            <li><a class="footer-cart" href="#  ">Корзина</a></li>
+          </div>
+        </ul>
       </div>
       <div class="footer-navigation footer-middle">
         <ul class="site-footer-navigation">
@@ -256,33 +265,59 @@
       </div>
     </div>
   </footer>
-  <!--
-  <section class="modal-contact">
+
+  <section class="modal-contact visually-hidden">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="contact-name">Ваше имя:</label>
-        <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="contact-mail">Ваш e-mail:</label>
-        <input id="contact-mail" type="email" name="mail" placeholder="email@example.com">
-      </p>
+      <div class="contact-form-wrapper">
+        <p>
+          <label for="contact-name">Ваше имя:</label>
+          <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="contact-mail">Ваш e-mail:</label>
+          <input id="contact-mail" type="email" name="mail" placeholder="email@example.com">
+        </p>
+      </div>
       <p>
         <label for="contact-letter">Текст письма:</label>
         <textarea id="contact-letter" name="letter" cols="50" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit"><span>Отправить</span></button>
     </form>
-    <button class="button-close"><span>Закрыть</span></button>
+    <button class="button-close contact-button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
-  <section class="modal-map">
+  <section class="modal-map visually-hidden">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <p>
-      <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
-    </p>
-    <button class="button-close"><span>Закрыть</span></button>
-  </section> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1552408030911"
+      width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <button class="button-close map-button-close"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <script>
+    var contact = document.querySelector(".contacts-button");
+    var contactPopup = document.querySelector(".modal-contact");
+    var contactButtonClose = document.querySelector(".contact-button-close");
+    var mapButtonClose = document.querySelector(".map-button-close");
+    var contactMap = document.querySelector(".contact-map");
+    var mapPopup = document.querySelector(".modal-map");
+    contactButtonClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      contactPopup.classList.add("visually-hidden");
+    });
+    contact.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      contactPopup.classList.remove("visually-hidden");
+    });
+    contactMap.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("visually-hidden");
+    });
+    mapButtonClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("visually-hidden");
+    });
+  </script>
 </body>
 
 </html>
