@@ -600,7 +600,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-button {
-  margin-bottom: 55px;
+  margin-bottom: 58px;
   margin-left: 43px;
 }
 
@@ -739,37 +739,44 @@ input[type="radio"].visually-hidden {
   width: 480px;
 }
 
-.advantages {
-  margin-left: -3px;
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+  margin: 0;
   padding: 0;
-
-  text-align: left;
 }
 
-.column-1 {
-  width: 155px;
+.slider-item:nth-child(3) .advantage-list {
+  width: 300px;
 }
 
-.column-2 {
-  width: 135px;
-}
+.advantage-item {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
 
-.advantages tr:first-child {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 48px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  letter-spacing: 0.36px;
-}
-
-.advantages tr:last-child {
-  height: 29px;
-
+  list-style: none;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgb(70, 70, 70);
   letter-spacing: 0.13px;
+}
+
+.advantage-item:nth-child(2) {
+  width: 140px;
+}
+
+.advantage-item span {
+  order: -1;
+  margin-bottom: 7px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  letter-spacing: 0.36px;
 }
 
 .popular {
