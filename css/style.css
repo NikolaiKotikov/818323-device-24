@@ -653,7 +653,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-
 .slider-title {
   position: relative;
 
@@ -667,11 +666,18 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.6px;
 }
 
+.slider-item:nth-child(1) .slider-title {
+  width: 401px;
+}
+
+.slider-item:nth-child(2) .slider-title {
+  width: 260px;
+}
+
 .slider-title::before {
   content: "";
   position: absolute;
-  right: 460px;
-  bottom: 147px;
+  top: 46px;
 
   width: 100px;
   height: 7px;
@@ -683,7 +689,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -6px;
-  right: 45px;
+  left: 304px;
   z-index: -1;
 
   font-weight: 800;
@@ -696,8 +702,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item:nth-child(1) .slider-title::after {
   content: "01";
-  top: -5px;
-  right: 47px;
+  left: 329px;
 
   letter-spacing: 1.36px;
 }
@@ -708,9 +713,10 @@ input[type="radio"].visually-hidden {
 
 .slider-item:nth-child(3) .slider-title::after {
   content: "03";
+  left: 302px;
 }
 
-.slider p {
+.slider-content {
   margin-top: 18px;
   margin-bottom: 49px;
 
@@ -719,6 +725,18 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: rgb(70, 70, 70);
   letter-spacing: 0.15px;
+}
+
+.slider-item:nth-child(1) .slider-content {
+  width: 495px;
+}
+
+.slider-item:nth-child(2) .slider-content {
+  width: 460px;
+}
+
+.slider-item:nth-child(3) .slider-content {
+  width: 480px;
 }
 
 .advantages {
