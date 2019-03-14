@@ -1098,6 +1098,7 @@ label[for="services-2"] {
   font-size: 16px;
   line-height: 40px;
   font-family: "Gilroy", "Arial", sans-serif;
+  color: rgb(0, 0, 0);
 }
 
 .deliveries li {
@@ -1115,10 +1116,6 @@ label[for="services-2"] {
 
   border: 2px solid rgb(229, 229, 229);
   border-radius: 50%;
-}
-
-.deliveries a {
-  color: rgb(0, 0, 0);
 }
 
 .info-columns {
