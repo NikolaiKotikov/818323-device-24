@@ -1726,7 +1726,7 @@ input[type="radio"]:disabled {
 }
 
 .sort a {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
