@@ -81,7 +81,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 3.66px;
@@ -437,7 +437,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
@@ -662,7 +662,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.6px;
 }
 
@@ -695,7 +695,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 179px;
   line-height: 179.2px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(255, 255, 255);
   letter-spacing: 3.36px;
 }
@@ -758,7 +758,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.36px;
 }
 
@@ -812,7 +812,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 0.18px;
 }
@@ -1015,7 +1015,7 @@ label[for="services-2"] {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 1px;
 }
@@ -1090,7 +1090,7 @@ label[for="services-2"] {
   font-weight: 800;
   font-size: 16px;
   line-height: 40px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .deliveries li {
@@ -1135,7 +1135,7 @@ label[for="services-2"] {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.71px;
 }
 
@@ -1369,7 +1369,7 @@ label[for="services-2"] {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 3.6px;
 }
 
@@ -1666,7 +1666,7 @@ main h1 {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1682,7 +1682,7 @@ main h1 {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.18px;
 }
 
@@ -1750,7 +1750,7 @@ input[type="radio"]:disabled {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   letter-spacing: 0.18px;
 }
@@ -1763,7 +1763,7 @@ input[type="radio"]:disabled {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-align: right;
   color: rgb(70, 70, 70);
   letter-spacing: 0.16px;
@@ -1773,7 +1773,7 @@ input[type="radio"]:disabled {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -1784,7 +1784,7 @@ input[type="radio"]:disabled {
   margin-bottom: 24px;
   margin-left: 59px;
 
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.6px;
 }
 
@@ -2134,7 +2134,7 @@ input[type="radio"]:disabled {
   font-weight: 800;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
@@ -2214,7 +2214,7 @@ input[type="radio"]:disabled {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -2225,7 +2225,7 @@ input[type="radio"]:disabled {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
 
   background: rgb(238, 238, 238);
@@ -2513,7 +2513,7 @@ input[type="radio"]:disabled {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: rgb(0, 0, 0);
 }
 
