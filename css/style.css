@@ -2122,14 +2122,17 @@ input[type="radio"]:disabled {
   margin-bottom: 32px;
 }
 
-.item-new {
+.product-new::before {
+  content: "NEW";
   position: absolute;
   top: 29px;
   right: 27px;
 
-  width: 56px;
-  height: 56px;
-  margin: 0;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding-top: 17px;
+  padding-left: 4px;
 
   font-weight: 800;
   font-size: 14px;
@@ -2138,7 +2141,7 @@ input[type="radio"]:disabled {
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.55px;
   /* background-color: rgb(205, 57, 68, 0.1); */
 
   border: 2px solid rgba(0, 0, 0, 0.1);
