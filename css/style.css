@@ -988,12 +988,16 @@ label[for="services-2"] {
   background-position: 533px 38px;
 }
 
-.services-item p {
+.services-content {
   width: 455px;
   margin-top: 31px;
 
   color: rgb(70, 70, 70);
   letter-spacing: 0.25px;
+}
+
+.services-item:nth-child(3) .services-content {
+  width: 435px;
 }
 
 .services-list {
