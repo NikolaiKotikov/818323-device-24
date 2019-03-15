@@ -1217,8 +1217,9 @@ label[for="services-2"] {
   letter-spacing: 0.11px;
 }
 
-.contacts img {
-  margin-bottom: 26px;
+.contacts-map {
+  display: block;
+  margin-bottom: 65px;
   margin-left: 3px;
 }
 
