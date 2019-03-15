@@ -1274,8 +1274,6 @@ label[for="services-2"] {
 
 .adress {
   -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
   width: 220px;
 }
 
