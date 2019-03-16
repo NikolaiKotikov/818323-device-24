@@ -428,6 +428,10 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
+.search-field:hover {
+  border-bottom: 2px solid #000000;
+}
+
 .site-navigation > li > a,
 .site-navigation-wrapper a {
   font-weight: 800;
@@ -481,7 +485,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid transparent;
 }
 
-.search-field:focus + .search-button {
+.search-field:focus + .search-button,
+.search-button:focus {
   color: rgb(0, 0, 0);
 
   border: 2px solid rgb(0, 0, 0);
@@ -943,7 +948,10 @@ input[type="radio"].visually-hidden {
 
 #services-1:checked ~ .tab-controls .delivery-tab::before,
 #services-2:checked ~ .tab-controls .warranty-tab::before,
-#services-3:checked ~ .tab-controls .credit-tab::before {
+#services-3:checked ~ .tab-controls .credit-tab::before,
+.delivery-tab:active::before,
+.warranty-tab:active::before,
+.credit-tab:active::before {
   top: -10px;
   right: -120px;
 
@@ -954,7 +962,10 @@ input[type="radio"].visually-hidden {
 
 #services-1:checked ~ .tab-controls .delivery-tab,
 #services-2:checked ~ .tab-controls .warranty-tab,
-#services-3:checked ~ .tab-controls .credit-tab {
+#services-3:checked ~ .tab-controls .credit-tab,
+.delivery-tab:active,
+.warranty-tab:active,
+.credit-tab:active {
   color: rgb(247, 225, 132);
 }
 
