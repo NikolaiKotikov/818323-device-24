@@ -1838,13 +1838,6 @@ input[type="radio"]:disabled {
   left: -35px;
 }
 
-.button:hover::before,
-.button:focus::before {
-  top: -10px;
-
-  height: 40px;
-}
-
 .filter-option label {
   position: relative;
 
@@ -2554,4 +2547,37 @@ input[type="radio"]:disabled {
 .contact-form input:invalid,
 .contact-form textarea:invalid {
   background-color: #f6dada;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(45%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(50%, -50%);;
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.button:hover::before,
+.button:focus::before {
+  top: -10px;
+
+  height: 40px;
 }
