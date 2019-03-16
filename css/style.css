@@ -270,7 +270,7 @@ input[type="radio"].visually-hidden {
   padding-left: 0;
 }
 
-.site-navigation > li:hover .catalog-menu {
+.submenu:hover .catalog-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,7 +907,7 @@ input[type="radio"].visually-hidden {
   background-color: rgb(0, 0, 0);
 }
 
-label[for="services-2"] {
+.warranty-tab {
   margin-bottom: 41px;
 }
 
@@ -941,9 +941,9 @@ label[for="services-2"] {
   display: block;
 }
 
-#services-1:checked ~ .tab-controls label[for="services-1"]::before,
-#services-2:checked ~ .tab-controls label[for="services-2"]::before,
-#services-3:checked ~ .tab-controls label[for="services-3"]::before {
+#services-1:checked ~ .tab-controls .delivery-tab::before,
+#services-2:checked ~ .tab-controls .warranty-tab::before,
+#services-3:checked ~ .tab-controls .credit-tab::before {
   top: -10px;
   right: -120px;
 
@@ -952,9 +952,9 @@ label[for="services-2"] {
   background-color: rgb(0, 0, 0);
 }
 
-#services-1:checked ~ .tab-controls label[for="services-1"],
-#services-2:checked ~ .tab-controls label[for="services-2"],
-#services-3:checked ~ .tab-controls label[for="services-3"] {
+#services-1:checked ~ .tab-controls .delivery-tab,
+#services-2:checked ~ .tab-controls .warranty-tab,
+#services-3:checked ~ .tab-controls .credit-tab {
   color: rgb(247, 225, 132);
 }
 
