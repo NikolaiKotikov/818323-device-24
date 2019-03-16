@@ -921,22 +921,7 @@ label[for="services-2"] {
   left: 0;
 }
 
-.services::before {
-  content: "";
-  position: absolute;
-  top: 112px;
-  right: -50vw;
-  left: -50vw;
-
-  height: 288px;
-
-  background-color: rgb(229, 229, 229);
-}
-
-
 .services {
-  position: relative;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -992,11 +977,26 @@ label[for="services-2"] {
 }
 
 .services-content {
+  position: relative;
+
   width: 455px;
+  min-height: 183px;
   margin-top: 31px;
 
   color: rgb(70, 70, 70);
   letter-spacing: 0.25px;
+}
+
+.services-content::before {
+  content: "";
+  position: absolute;
+  top: -52px;
+  right: -50vw;
+  bottom: -53px;
+  left: -50vw;
+  z-index: -1;
+
+  background-color: rgb(229, 229, 229);
 }
 
 .services-item:nth-child(3) .services-content {
