@@ -33,7 +33,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-main {
+.overflow-hidden {
   overflow-x: hidden;
 }
 
@@ -1533,13 +1533,6 @@ label[for="services-2"] {
   opacity: 0.1;
 }
 
-main h1 {
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.17px;
-}
-
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1775,6 +1768,9 @@ input[type="radio"]:disabled {
   margin-bottom: 24px;
   margin-left: 59px;
 
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.6px;
 }
