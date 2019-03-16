@@ -196,10 +196,6 @@ input[type="radio"].visually-hidden {
   width: 181px;
 }
 
-.logout {
-  width: 75px;
-}
-
 .footer-info-wrapper .logout {
   margin-left: 21px;
 }
@@ -1383,64 +1379,60 @@ label[for="services-2"] {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 488px;
   margin: 0;
   padding: 0;
   padding-top: 2px;
 }
 
+.user-footer-navigation a {
+  padding-left: 30px;
+}
 
+.footer-login-item {
+  width: 80px;
+}
+
+.user-footer-navigation.authorized .footer-compare-item {
+  width: 100px;
+  margin-left: 6px;
+}
+
+.footer-compare-item {
+  width: 100px;
+  margin-left: 26px;
+}
+
+.footer-cart-item {
+  width: 100px;
+  margin-left: 22px;
+
+  text-align: right;
+}
+
+.user-footer-navigation.authorized .footer-login-item {
+  width: 180px;
+}
+
+.user-footer-navigation.authorized .footer-login {
+  width: 150px;
+}
+
+.footer-login {
+  display: block;
+}
+
+.logout {
+  width: 73px;
+}
 
 .user-footer-navigation ul {
   padding-left: 0;
 }
 
-.footer-info-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  width: 240px;
-  margin-left: -1px;
-}
-
-.footer-info-wrapper li:last-child {
-  width: 50px;
-}
-
-.footer-navigation-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 221px;
-  margin-right: 2px;
-}
-
-.footer-navigation-wrapper li:last-child {
-  width: 58px;
-}
-
 .user-footer-navigation li {
-  margin-top: -2px;
-  padding-left: 30px;
-}
-
-.footer-info-wrapper .logout {
-  padding-left: 0;
-}
-
-.user-footer-navigation > li {
-  padding-left: 0;
+  margin-top: -4px;
 }
 
 .user-footer-navigation a {
@@ -1450,8 +1442,8 @@ label[for="services-2"] {
 .footer-login::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -27px;
+  top: 8px;
+  left: 2px;
 
   width: 14px;
   height: 14px;
@@ -1466,7 +1458,7 @@ label[for="services-2"] {
   content: "";
   position: absolute;
   top: 4px;
-  left: -21px;
+  left: 8px;
 
   width: 14px;
   height: 14px;
@@ -1481,7 +1473,7 @@ label[for="services-2"] {
   content: "";
   position: absolute;
   top: 3px;
-  left: -23px;
+  left: 8px;
 
   width: 14px;
   height: 14px;
